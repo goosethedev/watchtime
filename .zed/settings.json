@@ -1,6 +1,8 @@
 {
   "languages": {
     "JavaScript": {
+      "tab_size": 2,
+      "preferred_line_length": 100,
       "language_servers": ["biome", "..."],
       "formatter": { "language_server": { "name": "biome" } },
       "code_actions_on_format": {
@@ -8,25 +10,29 @@
       }
     },
     "TypeScript": {
+      "tab_size": 2,
+      "preferred_line_length": 100,
       "language_servers": ["biome", "..."],
       "formatter": { "language_server": { "name": "biome" } },
       "code_actions_on_format": {
         "source.organizeImports.biome": true
       }
     },
-    "TSX": {
-      "language_servers": ["biome", "..."],
-      "formatter": { "language_server": { "name": "biome" } }
-    },
     "JSON": {
+      "tab_size": 2,
+      "preferred_line_length": 100,
       "language_servers": ["biome", "..."],
       "formatter": { "language_server": { "name": "biome" } }
     },
     "JSONC": {
+      "tab_size": 2,
+      "preferred_line_length": 100,
       "language_servers": ["biome", "..."],
       "formatter": { "language_server": { "name": "biome" } }
     },
     "CSS": {
+      "tab_size": 2,
+      "preferred_line_length": 100,
       "language_servers": [
         "biome",
         "tailwindcss-intellisense-css",
@@ -36,8 +42,13 @@
       "formatter": { "language_server": { "name": "biome" } }
     },
     "Svelte": {
+      "tab_size": 2,
+      "preferred_line_length": 100,
       "language_servers": ["biome", "..."],
-      "formatter": { "language_server": { "name": "biome" } }
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.organizeImports.biome": true
+      }
     }
   },
   "format_on_save": "on"
