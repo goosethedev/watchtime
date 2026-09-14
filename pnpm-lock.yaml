@@ -11,6 +11,9 @@ importers:
       '@biomejs/biome':
         specifier: 2.5.13
         version: 2.5.13
+      '@iconify-svelte/iconoir':
+        specifier: ^1.0.3
+        version: 1.0.3(svelte@5.57.0)
       '@sveltejs/adapter-auto':
         specifier: ^7.0.1
         version: 7.0.1(@sveltejs/kit@2.70.3(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.57.0)(vite@8.3.0(jiti@2.7.0)))(svelte@5.57.0)(typescript@6.0.3)(vite@8.3.0(jiti@2.7.0)))
@@ -23,6 +26,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.3.0
         version: 4.3.3(vite@8.3.0(jiti@2.7.0))
+      daisyui:
+        specifier: ^5.7.37
+        version: 5.7.37
       svelte:
         specifier: ^5.56.1
         version: 5.57.0
@@ -97,6 +103,17 @@ packages:
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
+
+  '@iconify-svelte/iconoir@1.0.3':
+    resolution: {integrity: sha512-caz4AeWSMD+2bhnDFRl9uaxQgGtO9QXMn8vPP0YQEdUvySBadKE+1aWp6I+Kh9XzEfIY0WL/h1CioXZkacI9KQ==}
+
+  '@iconify/css-svelte@1.0.1':
+    resolution: {integrity: sha512-f9w1anXXBm48VjDEWDrGTybdiwnDTIChcUpBK/UtXR/AhNp/Co/VPp00t7dO93j+4Je0OwMKyc/HvI7Lpv3PKg==}
+    peerDependencies:
+      svelte: '>4.0.0'
+
+  '@iconify/types@2.0.0':
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -383,6 +400,9 @@ packages:
   cookie@0.6.0:
     resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
     engines: {node: '>= 0.6'}
+
+  daisyui@5.7.37:
+    resolution: {integrity: sha512-PVcdAcL0ni6/wmcNwvldARZuO0HdzxtjVEAT86ie9GMgFjwmqIWeXsPaM2/eYqLb4WMexqj146C5Z1xmzZDnjg==}
 
   deepmerge@4.3.1:
     resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
@@ -770,6 +790,19 @@ snapshots:
   '@biomejs/cli-win32-x64@2.5.13':
     optional: true
 
+  '@iconify-svelte/iconoir@1.0.3(svelte@5.57.0)':
+    dependencies:
+      '@iconify/css-svelte': 1.0.1(svelte@5.57.0)
+    transitivePeerDependencies:
+      - svelte
+
+  '@iconify/css-svelte@1.0.1(svelte@5.57.0)':
+    dependencies:
+      '@iconify/types': 2.0.0
+      svelte: 5.57.0
+
+  '@iconify/types@2.0.0': {}
+
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
       '@jridgewell/sourcemap-codec': 1.6.0
@@ -966,6 +999,8 @@ snapshots:
   clsx@2.1.1: {}
 
   cookie@0.6.0: {}
+
+  daisyui@5.7.37: {}
 
   deepmerge@4.3.1: {}
 
